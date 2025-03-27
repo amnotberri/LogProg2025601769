@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="BISIESTO1CM11"/>
+        <attribute name="authors" value="karla"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 09:39:02 p. m."/>
+        <attribute name="created" value="a2FybGE7QU1fTk9UX0JFUlJZOzIwMjUtMDMtMjY7MDk6MDQ6MzUgcC4gbS47Mjk1Nw=="/>
+        <attribute name="edited" value="a2FybGE7QU1fTk9UX0JFUlJZOzIwMjUtMDMtMjY7MDk6Mzk6MDIgcC4gbS47MjszMDY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce un a&#241;o, te dire si es bisiesto&#160;o&#160;nop&#160;:3&quot;" newline="True"/>
+            <input variable="year"/>
+            <if expression="year%4==0">
+                <then>
+                    <if expression="year%100==0">
+                        <then>
+                            <if expression="year%400==0">
+                                <then>
+                                    <output expression="&quot;Felcidades &quot; &amp; year &amp; &quot; es bisiesto!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;OH NO! &quot; &amp; year &amp; &quot; no es bisiesto!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Felcidades &quot; &amp; year &amp; &quot; es bisiesto!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;OH NO! &quot; &amp; year &amp; &quot; no es bisiesto!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

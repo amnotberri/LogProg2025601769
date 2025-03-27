@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DONAS1CM11"/>
+        <attribute name="authors" value="karla"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 08:52:54 p. m."/>
+        <attribute name="created" value="a2FybGE7QU1fTk9UX0JFUlJZOzIwMjUtMDMtMjY7MDc6MDk6MzMgcC4gbS47Mjk1OA=="/>
+        <attribute name="edited" value="a2FybGE7QU1fTk9UX0JFUlJZOzIwMjUtMDMtMjY7MDg6NTI6NTQgcC4gbS47MTszMDY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precioDONAS" type="Integer" array="False" size=""/>
+            <assign variable="precioDONAS" expression="10"/>
+            <declare name="numDONAS" type="Integer" array="False" size=""/>
+            <assign variable="numDONAS" expression="0"/>
+            <output expression="&quot;Porfavor ingresa el numero de donas que vas a comprar uwu&quot;" newline="True"/>
+            <input variable="numDONAS"/>
+            <if expression="numDONAS&gt;=30">
+                <then>
+                    <if expression="numDONAS&gt;=50">
+                        <then>
+                            <output expression="&quot;tu total es de: &quot; &amp; (precioDONAS*numDONAS)-numDONAS*2 &amp; &quot; pesos!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;tu total es de: &quot; &amp; (precioDONAS*numDONAS)-numDONAS*1 &amp; &quot; pesos!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;tu total es de: &quot; &amp; precioDONAS*numDONAS &amp; &quot; pesos!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
