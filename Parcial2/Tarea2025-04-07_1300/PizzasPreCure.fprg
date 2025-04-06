@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PizzasPreCure"/>
+        <attribute name="authors" value="karla"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 08:26:46 a. m."/>
+        <attribute name="created" value="a2FybGE7QU1fTk9UX0JFUlJZOzIwMjUtMDQtMDY7MDc6MjI6MTUgYS4gbS47MjkzNw=="/>
+        <attribute name="edited" value="a2FybGE7QU1fTk9UX0JFUlJZOzIwMjUtMDQtMDY7MDg6MjY6NDYgYS4gbS47MTszMDU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pizzaV" type="String" array="False" size=""/>
+            <declare name="ingrediente" type="String" array="False" size=""/>
+            <output expression="&quot;Bienvenido a pizzas PreCure!&quot;" newline="True"/>
+            <output expression="&quot;&#191;Quiere una pizza vegetariana?&quot;" newline="True"/>
+            <input variable="pizzaV"/>
+            <if expression="pizzaV=&quot;si&quot;">
+                <then>
+                    <output expression="&quot;De acuerdo! estos son nuestros ingredientes, elija solo uno&quot;" newline="True"/>
+                    <output expression="&quot;Pimiento&quot;" newline="True"/>
+                    <output expression="&quot;Tofu&quot;" newline="True"/>
+                    <input variable="ingrediente"/>
+                    <output expression="&quot;ok! Prepararemos una pizza vegetariana con mozzarella, tomate y &quot; &amp; ingrediente" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;De acuerdo! estos son nuestros ingredientes, elija solo uno&quot;" newline="True"/>
+                    <output expression="&quot;Peperoni&quot;" newline="True"/>
+                    <output expression="&quot;Jamon&quot;" newline="True"/>
+                    <output expression="&quot;Salmon&quot;" newline="True"/>
+                    <input variable="ingrediente"/>
+                    <output expression="&quot;ok! Prepararemos una pizza no vegetariana con mozzarella, tomate y &quot; &amp; ingrediente" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
