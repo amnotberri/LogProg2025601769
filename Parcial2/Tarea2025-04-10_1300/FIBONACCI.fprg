@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FIBONACCI"/>
+        <attribute name="authors" value="karla"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 07:54:33 p. m."/>
+        <attribute name="created" value="a2FybGE7QU1fTk9UX0JFUlJZOzIwMjUtMDQtMDk7MDc6MDY6MjYgcC4gbS47Mjk1OQ=="/>
+        <attribute name="edited" value="a2FybGE7QU1fTk9UX0JFUlJZOzIwMjUtMDQtMDk7MDc6NTQ6MzMgcC4gbS47MTszMDY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <declare name="z" type="Integer" array="False" size=""/>
+            <assign variable="z" expression="0"/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="2"/>
+            <assign variable="contador" expression="2"/>
+            <output expression="z" newline="True"/>
+            <output expression="a" newline="True"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+            <while expression="contador&lt;63">
+                <assign variable="c" expression="a+b"/>
+                <output expression="c" newline="True"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
